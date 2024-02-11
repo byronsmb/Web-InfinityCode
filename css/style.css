@@ -2037,16 +2037,16 @@ iframe {
 	 transition: transform calc(var(--d) * 2) var(--e);
 }
  .card-categorias:nth-child(1):before {
-	 background-image:  url(/images/categorias/web.png);
+	 background-image:  url(../images/categorias/web.png);
 }
  .card-categorias:nth-child(2):before {
-	 background-image: url(/images/categorias/app.png);
+	 background-image: url(../images/categorias/app.png);
 }
  .card-categorias:nth-child(3):before {
-	 background-image: url(/images/categorias/soporte.jpg);
+	 background-image: url(../images/categorias/soporte.jpg);
 }
  .card-categorias:nth-child(4):before {
-	 background-image: url(/images/categorias/camaras.jpg);
+	 background-image: url(../images/categorias/camaras.jpg);
 }
  .content {
 	 position: relative;
