@@ -2163,39 +2163,45 @@ iframe {
  .cards_soporte {
  display: flex;
  flex-wrap: wrap;
- list-style: none;
+ justify-content: center;
+
  margin: 0;
- padding: 0;
+ padding: 0px;
  }
 
- .cards_item_soporte {
- display: flex;
- padding: 1rem;
- @media(min-width: 40rem) {
-     width: 50%;
- }
- @media(min-width: 56rem) {
-     width: 33.3333%;
- }
- }
+ 
 
  .card_soporte {
     background-color: white;
-    border-radius: 0.25rem;
+    border-radius: 8px;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     color: gray;
+    margin: 20px;
+    min-width: 25%;
     font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
     padding: 1rem;
+    background: rgba(79, 145, 101, 0.199);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
+    @media(min-width: 1rem) and (max-width: 40rem) {
+        /* Estilos para pantallas con ancho entre 1rem y 40rem */
+        width: 50%;
+    }
+    @media(min-width: 40rem) {
+        /* Estilos para pantallas más grandes que 40rem */
+        width: 40%;
+    }
+    @media(min-width: 56rem) {
+        width: 30%;
+    }
  }
 
  .card_soporte:hover {
@@ -2212,25 +2218,16 @@ iframe {
  }
 
  .card_image_soporte {
- background-position: center center;
- background-repeat: no-repeat;
- background-size: cover;
- border-top-left-radius: 0.25rem;
- border-top-right-radius: 0.25rem;
- filter: contrast(70%);
- overflow: hidden;
- position: relative;
- transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
- &::before {
-     content: "";
-     display: block;
-     padding-top: 56.25%; 
- }
- @media(min-width: 40rem) {
-     &::before {
-     padding-top: 66.6%; 
-     }
- }
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+    height: 214px;
+    
+    
  }
 
  .card_image_soporte--antivirus {
@@ -2250,19 +2247,25 @@ iframe {
  }
 
  .card_title_soporte {
- color: gray-dark;
- font-size: 1.25rem;
- font-weight: 300;
- letter-spacing: 2px;
+ color: #666;
+ font-family: 'Oswald', sans-serif;
+ font-size: 1.7rem;
+ font-weight: 500;
+
  text-transform: uppercase;
+ 
  }
 
  .card_text_soporte {
  flex: 1 1 auto;
- font-size: 0.875rem;
+ color: #807e7e;
+ font-size: 1.5rem;
+ font-weight: 300;
  line-height: 1.5;
- margin-bottom: 1.25rem;
+ margin-bottom: 1px;
  }
  /*------------------------------------------------------ */
 /* Fin Seccion Categorias                                 */
 /*------------------------------------------------------- */
+
+
