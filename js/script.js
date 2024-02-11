@@ -221,3 +221,26 @@ $('#team a').click(function (e) {
         
     });
 	
+/*---------------------------------------------------*/
+    /* Transicion APPs UIs
+    /*---------------------------------------------------*/
+    // Espera a que el DOM esté completamente cargado
+document.addEventListener("DOMContentLoaded", function() {
+    // Define un índice inicial
+    let index = 0;
+    // Obtén todas las imágenes del slideshow
+    const images = document.querySelectorAll("#slideshow img");
+    // Muestra la primera imagen
+    images[index].classList.add("active");
+    // Función para mostrar la siguiente imagen en el slideshow
+    function showNextImage() {
+        // Oculta la imagen actual
+        images[index].classList.remove("active");
+        // Calcula el índice de la siguiente imagen
+        index = (index + 1) % images.length;
+        // Muestra la siguiente imagen
+        images[index].classList.add("active");
+    }
+    // Establece un intervalo para cambiar automáticamente las imágenes
+    setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
+});
