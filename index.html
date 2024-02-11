@@ -109,42 +109,38 @@
 
                     
                     <li class="dropdown">
-                        <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explorar por Categoria<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="page-scroll" href="#desarrolloWeb" style="color: black;">Desarrollo – Páginas web</a></li>
-                            <li><a class="page-scroll" href="#desarrolloMovil" style="color: black;">Desarrollo - Apps móviles </a></li>
-                            <li><a class="page-scroll" href="#soporte" style="color: black;">Soporte Técnico </a></li>
-                            <li><a class="page-scroll" href="#camarasSeguridad" style="color: black;">Instalación Cámaras de Seguridad</a></li>
+                        <a href="/" class="dropdown-toggle no_close" id="btn_desplegable" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explorar por Categoria<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background: rgba(64, 83, 64, 0.582);">
+                            <li><a class="page-scroll dropdown-item" href="#desarrolloWeb" >Desarrollo – Páginas web</a></li>
+                            <li><a class="page-scroll dropdown-item" href="#desarrolloMovil" >Desarrollo - Apps móviles </a></li>
+                            <li><a class="page-scroll dropdown-item" href="#soporte">Soporte Técnico </a></li>
+                            <li><a class="page-scroll dropdown-item" href="#camarasSeguridad" >Instalación Cámaras de Seguridad</a></li>
                             <!-- Agrega más elementos de servicios según sea necesario -->
                         </ul>
                     </li>
                    
                     <li>
-                        <a class="page-scroll" href="#portfolio">a</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
-
+                    <!--
                     <li>
                         <a class="page-scroll" href="#feature">Feature</a>
-                    </li>
-
+                    </li> -->
+                    <!--
                     <li>
                         <a class="page-scroll" href="#service">Services</a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#equipo">Equipo</a>
                     </li>
              
-                    <li>
-                        <a class="page-scroll" href="#latest-news">Latest News</a>
-                    </li>
+                    
                     <!--
                     <li>
                         <a class="page-scroll" href="#testimonial">Testimonials</a>
                     </li>
                     -->
-                    <li>
-                        <a class="page-scroll" href="#partner">Nosotros</a>
-                    </li>
+                   
                     <li>
                         <a class="page-scroll" href="#contact">Contactos</a>
                     </li>
@@ -274,51 +270,6 @@
         </main>
     </section>
     
-    <!-- Start Feature Section 
-        <section id="feature" class="feature-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="feature">
-                            <i class="fa fa-magic"></i>
-                            <div class="feature-content">
-                                <h4>Web Design</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="feature">
-                            <i class="fa fa-gift"></i>
-                            <div class="feature-content">
-                                <h4>Graphics Design</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="feature">
-                            <i class="fa fa-wordpress"></i>
-                            <div class="feature-content">
-                                <h4>Wordpress Theme</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="feature">
-                            <i class="fa fa-plug"></i>
-                            <div class="feature-content">
-                                <h4>Wordpress Plugin</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-        </section>
-         End Feature Section -->
    
         <section id="desarrolloWeb"  class="desarrollo-section">
             <h2>Desarrollo Web</h2>
@@ -339,8 +290,10 @@
                         <div class="card_image_soporte card_image_soporte--instalacion"></div>
                         <div class="card_content_soporte">
                         <div class="card_title_soporte">Instalación de Programas</div>
+                        
                         <p class="card_text_soporte">Se instala cualquier tipo de programa que requiera o necesite. </p>
-                        </div>
+                        
+                    </div>
                     </div>
                 
                
@@ -376,64 +329,6 @@
         <section id="camarasSeguridad"  class="desarrollo-section">
             <h2>camaras</h2>
     
-    <!-- Start Call to Action Section -->
-    <section class="call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Libero tempore soluta nobis est eligendi</br> optio cumque nihil impedit minus id quod maxime </br>placeat facere possimus, omnis voluptas assumenda est</h1>
-                    <button type="submit" class="btn btn-primary">Buy This Template</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Call to Action Section -->
-    
-    <section id="servicios" class="py-6 py-xxl-10 bg-dark">
-        <div class="container">
-            <div class="row align-items-center gy-lg-6 gy-3">
-                <div class="col-lg-5 col-12">
-                    <div class="d-flex flex-column gap-5 text-center text-md-start">
-                        <div>
-                            <h1 class="text-white mb-3 display-5 fw-bold">
-                                Hola a todos
-                                <span class="text-danger">.</span>
-                            </h1>
-                            <p class="mb-0 lead">Our premium coaching website templates help you create an impactful online presence by launching your dream website within no time.</p>
-                        </div>
-                        <div>
-                            <a href="https://bit.ly/coach-ui" class="btn btn-primary rounded-pill" target="_blank">Buy Theme Now</a>
-                        </div>
-                        <div class="d-flex flex-row gap-1 justify-content-center justify-content-md-start">
-                            <div class="me-2 text-warning">
-                                <i class="bi bi-star-fill me-1"></i>
-                                5.0
-                            </div>
-                            Over
-                            <span class="fw-bold text-primary">250+</span>
-                            customers used Coach.
-                        </div>
-                    </div>
-                </div>
-                <div class="offset-lg-1 col-lg-6 col-12 d-md-block d-none">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mt-5">
-                                <img src="./assets/images/landing/hero-img-4.jpg" alt="img" class="rounded-4 img-fluid mb-5 w-100">
-                                <img src="./assets/images/landing/hero-img-3.jpg" alt="img" class="rounded-4 img-fluid mb-5 mb-md-0">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div>
-                                <img src="./assets/images/landing/hero-img-2.jpg" alt="img" class="rounded-4 img-fluid mb-5">
-                                <img src="./assets/images/landing/hero-img-1.jpg" alt="img" class="rounded-4 img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     
     <!-- Start Portfolio Section -->
@@ -553,21 +448,11 @@
             </div>
         </div>
         <!-- End Portfolio Modal Section -->
-    
-        <section id="servicios" class="">
-            <h1>SERVICIOS</h1>
-        </div>
-
-
-
 
     
 
 
-    
-
-
-    <!-- Start Feature Section -->
+    <!-- Start Feature Section 
         <section id="service" class="services-section">
             <div class="container">
                 <div class="row">
@@ -592,7 +477,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.col-md-4 -->
+                    </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="feature-2">
                             <div class="media">
@@ -606,7 +491,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.col-md-4 -->
+                    </div><
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="feature-2">
                             <div class="media">
@@ -620,7 +505,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.col-md-4 -->
+                    </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="feature-2">
                             <div class="media">
@@ -634,7 +519,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.col-md-4 -->
+                    </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="feature-2">
                             <div class="media">
@@ -648,7 +533,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.col-md-4 -->
+                    </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="feature-2">
                             <div class="media">
@@ -662,13 +547,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.col-md-4 -->
+                    </div>
                     
-                </div><!-- /.row -->
+                </div>
             
-            </div><!-- /.container -->
+            </div>
         </section>
-        <!-- End Feature Section -->
+         End Feature Section -->
     
     
     
@@ -712,7 +597,7 @@
 
 
     <!-- Start Team Member Section -->
-    <section id="team" class="team-member-section">
+    <section id="equipo" class="team-member-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -834,113 +719,14 @@
         </div>
     </section>
     <!-- End Team Member Section -->
-
-
     
     
-    
-    <!-- Start Latest News Section -->
-    <section id="latest-news" class="latest-news-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center">
-                        <h3>Latest News</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest-news">
-                    <div class="col-md-12">
-                        <div class="latest-post">
-                            <img src="images/about-01.jpg" class="img-responsive" alt="">
-                            <h4><a href="#">Standard Post with Image</a></h4>
-                            <div class="post-details">
-                                <span class="date"><strong>31</strong> <br>Dec , 2014</span>
-                                
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="latest-post">
-                            <img src="images/about-02.jpg" class="img-responsive" alt="">
-                            <h4><a href="#">Standard Post with Image</a></h4>
-                            <div class="post-details">
-                                <span class="date"><strong>17</strong> <br>Feb , 2014</span>
-                                
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="latest-post">
-                            <img src="images/about-03.jpg" class="img-responsive" alt="">
-                            <h4><a href="#">Standard Post with Image</a></h4>
-                            <div class="post-details">
-                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-                                
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="latest-post">
-                            <img src="images/about-01.jpg" class="img-responsive" alt="">
-                            <h4><a href="#">Standard Post with Image</a></h4>
-                            <div class="post-details">
-                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-                                
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="latest-post">
-                            <img src="images/about-02.jpg" class="img-responsive" alt="">
-                            <h4><a href="#">Standard Post with Image</a></h4>
-                            <div class="post-details">
-                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-                                
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="latest-post">
-                            <img src="images/about-03.jpg" class="img-responsive" alt="">
-                            <h4><a href="#">Standard Post with Image</a></h4>
-                            <div class="post-details">
-                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-                                
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Latest News Section -->
-
-
-
-    
-    
-    
-    <!-- Start Testimonial Section -->
+    <!-- Start Testimonial Section 
     <div id="testimonial" class="testimonial-section">
         <div class="container">
-            <!-- Start Testimonials Carousel -->
+            
             <div id="testimonial-carousel" class="testimonials-carousel">
-                <!-- Testimonial 1 -->
+               
                 <div class="testimonials item">
                     <div class="testimonial-content">
                         <img src="images/testimonial/face_1.png" alt="" >
@@ -951,7 +737,7 @@
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br> laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
                     </div>
                 </div>
-                <!-- Testimonial 2 -->
+                
                 <div class="testimonials item">
                     <div class="testimonial-content">
                         <img src="images/testimonial/face_2.png" alt="" >
@@ -962,7 +748,7 @@
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia<br> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                     </div>
                 </div>
-                <!-- Testimonial 3 -->
+                
                 <div class="testimonials item">
                     <div class="testimonial-content">
                         <img src="images/testimonial/face_3.png" alt="" >
@@ -974,10 +760,10 @@
                     </div>
                 </div>
             </div>
-            <!-- End Testimonials Carousel -->
+            
         </div>
     </div>
-    <!-- End Testimonial Section -->
+     End Testimonial Section -->
     
     
 

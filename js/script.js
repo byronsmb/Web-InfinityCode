@@ -39,7 +39,9 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function () {
     "use strict";
-    $('.navbar-toggle:visible').click();
+    if (!$(this).hasClass('no_close')) {
+        $('.navbar-toggle:visible').click();
+    }
 });
     
     
@@ -219,4 +221,3 @@ $('#team a').click(function (e) {
         
     });
 	
-
