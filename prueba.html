@@ -7,16 +7,24 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     .contenedor {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 
-.texto {
-  flex: 1;
-  padding: 20px;
-  width: 50%;
-}
+    @media (max-width: 768px) {
+      .contenedor {
+        flex-direction: column; /* Cambia a columna en pantallas menores */
+      }
+    }
+
+    .texto_web {
+      
+      padding: 20px;
+      width: 50%;
+    }
 
 .card1 {
    
@@ -54,32 +62,56 @@
   object-fit: cover;
 }
 
+ 
+
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-  <div class="contenedor">
-    <div class="texto">
-      <h1>Texto en la parte izquierda</h1>
-      <p>Aquí puedes escribir tu texto.</p>
-    </div>
-    <div class="cards">
-      <div class="card1">
-        <div class="card">
-            <img src="image1.png" alt="Imagen 1">
+  <section class="py-6 py-xxl-10 bg-dark contenedor">
+    <div class="container">
+      <div class="row align-items-center gy-lg-6 gy-3">
+        <div class="col-lg-5 col-12">
+          <div class="d-flex flex-column gap-5 text-center text-md-start">
+            <div>
+              <h1 class="text-white mb-3 display-5 fw-bold">
+                Exclusive Website Templates for Coaches
+                <span class="text-danger">.</span>
+              </h1>
+              <p class="mb-0 lead">Our premium coaching website templates help you create an impactful online presence by launching your dream website within no time.</p>
+            </div>
+            <div>
+              <a href="https://bit.ly/coach-ui" class="btn btn-primary rounded-pill" target="_blank">Buy Theme Now</a>
+            </div>
+            <div class="d-flex flex-row gap-1 justify-content-center justify-content-md-start">
+              <div class="me-2 text-warning">
+                <i class="bi bi-star-fill me-1"></i>
+                5.0
+              </div>
+              Over
+              <span class="fw-bold text-primary">250+</span>
+              customers used Coach.
+            </div>
           </div>
-          <div class="card">
-            <img src="image1.png" alt="Imagen 2">
+        </div>
+        <div class="offset-lg-1 col-lg-6 col-12 d-md-block d-none">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mt-5">
+                <img src="image1.png" alt="img" class="rounded-4 img-fluid mb-5 w-100">
+                <img src="image1.png" alt="img" class="rounded-4 img-fluid mb-5 mb-md-0">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img src="image1.png" alt="img" class="rounded-4 img-fluid mb-5">
+                <img src="image1.png" alt="img" class="rounded-4 img-fluid">
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-      <div class="card2">
-        <div class="card">
-            <img src="image1.png" alt="Imagen 1">
-          </div>
-          <div class="card">
-            <img src="image1.png" alt="Imagen 2">
-          </div>
-      </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>

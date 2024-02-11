@@ -2439,8 +2439,28 @@ iframe {
 
 .device-wrapper {
   max-width: 300px;
+  
   width: 100%;
 }
+
+/*TELEFONO*/
+@media screen and (max-width: 599px) {
+    .device-wrapper {
+        min-width: 200px;
+    }
+}
+/*TABLET*/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .device-wrapper {
+        min-width: 260px;
+    }
+  }
+/*ESCRITORIO*/
+@media screen and (min-width: 1025px) {
+    .device-wrapper {
+        min-width: 270px;
+    }
+  }
 
 .device {
   position: relative;
@@ -2564,7 +2584,7 @@ iframe {
 }
 @media (min-width: 1200px) {
   .masthead .masthead-device-mockup .circle {
-    width: 75%;
+    width: 74%
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
