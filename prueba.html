@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 1;
+  padding: 20px;
+  width: 50%;
+}
+
+.card1 {
+   
+  display: flex;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+  gap: 20px;
+}
+.card2 {
+   display: flex;
+   padding-top: 30px;
+   flex-wrap: wrap;
+   justify-content: center; /* Centra los elementos horizontalmente */
+   align-items: center;
+   gap: 20px;
+ }
+
+.card {
+  width: 200px;
+  height: 250px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cards {
+    display: flex;
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="texto">
+      <h1>Texto en la parte izquierda</h1>
+      <p>Aquí puedes escribir tu texto.</p>
+    </div>
+    <div class="cards">
+      <div class="card1">
+        <div class="card">
+            <img src="image1.png" alt="Imagen 1">
+          </div>
+          <div class="card">
+            <img src="image1.png" alt="Imagen 2">
+          </div>
+      </div>
+      <div class="card2">
+        <div class="card">
+            <img src="image1.png" alt="Imagen 1">
+          </div>
+          <div class="card">
+            <img src="image1.png" alt="Imagen 2">
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
