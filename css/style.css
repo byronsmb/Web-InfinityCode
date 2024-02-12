@@ -1446,6 +1446,24 @@ and (min-width : 551px){
     border-radius: 8px;
 }
 
+/*TELEFONO*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .footer-contact-info.tres {
+        display: none;
+    }
+}
+/*tablet*/
+/* se aplica cuando el ancho de la ventana del navegador es igual o menor a 600px*/
+@media screen and (max-width: 600px) {
+    .footer-contact-info.dos {
+        display: none;
+    }
+    .footer-contact-info.tres {
+        display: none;
+    }
+}
+
 .footer-contact-info ul {
     padding-bottom: 10px;
 }
@@ -1461,6 +1479,9 @@ and (min-width : 551px){
     display: flex;
     flex-direction: row;
    
+}
+.text-contact {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /*-------------------------------------------------------*/
 /* Start Footer Section                                  */
@@ -1480,6 +1501,7 @@ footer.style-1 .copyright {
 
 footer.style-1 .footer-social li {
     display: inline;
+    
     padding: 0 10px;
 }
 
@@ -2620,7 +2642,7 @@ iframe {
 /*------------------------------------------------------ */
 
 /*------------------------------------------------------ */
-/* Inicia Seccion Whatssapp                                */
+/* Inicia Seccion Whatssapp Flotante                     */
 /*------------------------------------------------------ */
 
 .float_wp{
@@ -2646,16 +2668,21 @@ iframe {
 .my-float_wp{
 	margin-top:16px;
 }
+/*------------------------------------------------------ */
+/* Fin Seccion Whatssapp Flotante                        */
+/*------------------------------------------------------ */
 
 /*------------------------------------------------------ */
-/* Inicia Seccion COntactos                                */
+/* Inicia Seccion Contactos                              */
 /*------------------------------------------------------ */
 @import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
 
 
 .container_contacto {
     display: flex;
+    justify-content: center;
 }
+
 .elemento-contacto {
     margin: 0 10px;
     border-radius: 50%;
@@ -2674,6 +2701,15 @@ iframe {
     -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 }
 
+/*TELEFONO y tablet*/
+@media screen and (max-width: 1024px) {
+    .elemento-contacto {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
 .elemento-contacto:hover {
     background: var(--color);
     color: #050801;
@@ -2682,3 +2718,6 @@ iframe {
         0 0 50px var(--color),
         0 0 200px var(--color);
 }
+/*------------------------------------------------------ */
+/* Fin Seccion Contactos                                 */
+/*------------------------------------------------------ */
