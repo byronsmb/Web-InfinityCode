@@ -4,14 +4,329 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        
+        @charset "UTF-8";
+    /*!
+ * Bootstrap  v5.3.2 (https: //getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */:root, [data-bs-theme=light] {
+    
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+@media (prefers-reduced-motion:no-preference) {
+    :root {
+    scroll-behavior: smooth;
+}
+}
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #10bd2d;
+    text-align: var(--bs-body-text-align);
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1  {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+@media (min-width:1200px) {
+     h1 {
+    font-size: 2.5rem;
+}
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+.lead { /********************************************************************************************************/
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.display-5 { /********************************************************************************************************/
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+@media (min-width:1200px) {
+    .display-5 { /********************************************************************************************************/
+    font-size: 3rem;
+    
+}
+}
+
+.img-fluid { /********************************************************************************************************/
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width:576px) {
+    .container {
+    max-width: 540px;
+    
+}
+}
+@media (min-width:768px) {
+    .container {
+    max-width: 720px;
+    
+}
+}
+@media (min-width:992px) {
+    .container {
+    max-width: 960px;
+}
+
+}
+@media (min-width:1200px) {
+    .container {
+    max-width: 1140px;
+}
+}@media (min-width:1400px) {
+    .container {
+    max-width: 1320px;
+}
+}
+
+
+
+.row { /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  --------------*/
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.row>* { /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  --------------*/
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+
+.col-12 { /********************************************************************************************************/
+    flex: 0 0 auto;
+    width: 100%}
+
+.g-3, .gy-3 { /********************************************************************************************************/
+    --bs-gutter-y: 1rem;
+}
+
+@media (max-width:767px) {
+    .col-md-6 { 
+        width: 35%;
+    }
+    .row {
+        justify-content: center;
+    }
+}
+@media (min-width:768px) {
+
+.col-md-6 { /********************************************************************************************************/
+    flex: 0 0 auto;
+    width: 50%}
+
+.col-lg-5 { /********************************************************************************************************/
+    flex: 0 0 auto;
+    width: 41.66666667%}
+.col-lg-6 { /********************************************************************************************************/
+    flex: 0 0 auto;
+    width: 50%}
+
+.offset-lg-1 { /********************************************************************************************************/
+    margin-left: 8.33333333%}
+
+.g-lg-5, .gy-lg-5 {/********************************************************************************************************/
+    --bs-gutter-y: 3rem;
+}
+}
+
+
+
+.d-flex { /********************************************************************************************************/
+    display: flex!important;
+}
+.d-inline-flex {
+    display: inline-flex!important;
+}
+
+
+.w-100 { /********************************************************************************************************/
+    width: 100%!important;
+}
+
+.flex-row { /********************************************************************************************************/
+    flex-direction: row!important;
+}
+.flex-column { /********************************************************************************************************/
+    flex-direction: column!important;
+}
+
+.justify-content-center { /********************************************************************************************************/
+    justify-content: center!important;
+}
+
+.align-items-center { /********************************************************************************************************/
+    align-items: center!important;
+}
+
+.mt-5 { /********************************************************************************************************/
+    margin-top: 3rem!important;
+}
+
+.me-1 { /********************************************************************************************************/
+    margin-right: .25rem!important;
+}
+.me-2 { /********************************************************************************************************/
+    margin-right: .5rem!important;
+}
+
+.mb-0 { /********************************************************************************************************/
+    margin-bottom: 0!important;
+}
+
+.mb-3 { /********************************************************************************************************/
+    margin-bottom: 1rem!important;
+}
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
+.mb-5 { /********************************************************************************************************/
+    margin-bottom: 3rem!important;
+}
+
+.py-5 { /**************************************************************************************************/
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.gap-1 { /********************************************************************************************************/
+    gap: .25rem!important;
+}
+
+.gap-5 { /********************************************************************************************************/
+    gap: 3rem!important;
+}
+
+.fw-bold { /********************************************************************************************************/
+    font-weight: 700!important;
+}
+
+.text-center { /********************************************************************************************************/
+    text-align: center!important;
+}
+
+.text-primary { /********************************************************************************************************/
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity))!important;
+}
+
+.text-warning { /********************************************************************************************************/
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity))!important;
+}
+.text-danger { /********************************************************************************************************/
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity))!important;
+}
+
+.text-white { /********************************************************************************************************/
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity))!important;
+}
+
+.bg-dark { /********************************************************************************************************/
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity))!important;
+}
+
+
+.rounded-4 { /********************************************************************************************************/
+    border-radius: 1rem!important;
+}
+
+@media (min-width:576px) {   /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .float-sm-start {
+    float: left!important;
+}
+
+
+.d-md-block { /********************************************************************************************************/
+    display: block!important;
+}
+
+.justify-content-md-start { /********************************************************************************************************/
+    justify-content: flex-start!important;
+}
+
+.mb-md-0 {/********************************************************************************************************/
+    margin-bottom: 0!important;
+}
+
+.text-md-start { /********************************************************************************************************/
+    text-align: left!important;
+}
+
+.py-xxl-5 { /**************************************************************************************************/
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+
+}
+
+
+/*# sourceMappingURL=bootstrap.min.css.map */
+
+    </style>
     
 </head>
 <body>
-    <section class="py-6 py-xxl-10 bg-dark">
+    <section class="py-5 py-xxl-5 bg-dark">
         <div class="container">
-            <div class="row align-items-center gy-lg-6 gy-3">
-                <div class="col-lg-5 col-12">
+            <div class="row align-items-center gy-lg-5 gy-3">
+                <div class="col-lg-5 col-12" >
                     <div class="d-flex flex-column gap-5 text-center text-md-start">
                         <div>
                             <h1 class="text-white mb-3 display-5 fw-bold">
@@ -20,32 +335,22 @@
                             </h1>
                             <p class="mb-0 lead">Our premium coaching website templates help you create an impactful online presence by launching your dream website within no time.</p>
                         </div>
-                        <div>
-                            <a href="https://bit.ly/coach-ui" class="btn btn-primary rounded-pill" target="_blank">Buy Theme Now</a>
-                        </div>
-                        <div class="d-flex flex-row gap-1 justify-content-center justify-content-md-start">
-                            <div class="me-2 text-warning">
-                                <i class="bi bi-star-fill me-1"></i>
-                                5.0
-                            </div>
-                            Over
-                            <span class="fw-bold text-primary">250+</span>
-                            customers used Coach.
-                        </div>
+                        
+                        
                     </div>
                 </div>
-                <div class="offset-lg-1 col-lg-6 col-12 d-md-block d-none">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mt-5">
+                <div class="offset-lg-1 col-lg-6 col-12 d-md-block">
+                    <div class="row" >
+                        <div class="col-md-6 " >
+                            <div class="mt-5" >
                                 <img src="image1.png" alt="img" class="rounded-4 img-fluid mb-5 w-100">
-                                <img src="image1.png" alt="img" class="rounded-4 img-fluid mb-5 mb-md-0">
+                                <img src="./images/galaxy.jpg" alt="img" class="rounded-4 img-fluid mb-5 mb-md-0">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div>
-                                <img src="image1.png" alt="img" class="rounded-4 img-fluid mb-5">
-                                <img src="image1.png" alt="img" class="rounded-4 img-fluid">
+                        <div class="col-md-6" >
+                            <div class="" >
+                                <img src="p2.jpg" alt="img" class="rounded-4 img-fluid mb-5">
+                                <img src="p2.jpg" alt="img" class="rounded-4 img-fluid">
                             </div>
                         </div>
                     </div>
