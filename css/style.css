@@ -2438,6 +2438,7 @@ iframe {
 
 .text-center {   /***********************************************/
   text-align: center !important;
+  
 }
 
 .text-muted { /************************************************** */
@@ -2722,17 +2723,21 @@ iframe {
 /* Fin Seccion Contactos                                 */
 /*------------------------------------------------------ */
 
-
+/*------------------------------------------------------ */
+/* Inicio Seccion Web                                 */
+/*------------------------------------------------------ */
 
 .lead-web { /********************************************************************************************************/
-    font-size: 2.15rem;
+    font-size: 1.85rem;
     font-weight: 300px;
+    
 }
 
 .display-5-web { /********************************************************************************************************/
     font-size: calc(1.425rem + 2.1vw);
     font-weight: 300;
     line-height: 1.2;
+    
 }
 @media (min-width:1200px) {
     .display-5-web { /********************************************************************************************************/
@@ -2825,6 +2830,7 @@ iframe {
     margin-bottom: 0!important;
     margin-top: 0;
     margin-bottom: 1rem;
+    color: #9FA19F;
 }
 
 .mb-3-web { /********************************************************************************************************/
@@ -2850,10 +2856,7 @@ iframe {
 
 .fw-bold-web { /********************************************************************************************************/
     font-weight: 700!important;
-}
-
-.text-center-web { /********************************************************************************************************/
-    text-align: center!important;
+    
 }
 
 .text-primary { /********************************************************************************************************/
@@ -2892,12 +2895,86 @@ iframe {
     padding-bottom: 3rem!important;
 }
 
-section-title
+/*------------------------------------------------------ */
+/* Fin Seccion Web                                 */
+/*------------------------------------------------------ */
 
-.titulo-web > .mb-0-web{
-    color: #666;
- 
-    font-size: 28px;
-    font-family: 'Oswald', sans-serif;
-    text-transform: none;
+
+/*------------------------------------------------------ */
+/* Inicio Seccion Camaras                                 */
+/*------------------------------------------------------ */
+.container-camera { 
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(113, 116, 114, 0.13);
+    
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 28px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    margin-left: 10px; /* Agrega margen izquierdo */
+    margin-right: 10px;
+    
+  }
+  
+
+  .banner-image {
+    object-fit: cover; /* o contain, fill, none, scale-down */
+    border-radius: 12px;
+    height: 300px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.255);
 }
+
+
+  
+  .section-camera { /* **********************************************/
+    display: flex;
+    flex-direction: column;
+  
+    /* gradient background*/
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(214, 223, 214) 100%);
+    background-image: url(../fondo-camaras.png);
+    background-size: cover;
+    background-position: center;  
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;  
+  }
+  
+  .section-images-camera { /* **********************************************/
+    display: flex;
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Estilos para escritorio */
+  
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    /* Estilos para tablet */
+    .card-camera-1 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    /* Estilos para móvil */
+    .card-camera-1 {
+      display: none;
+    }
+    .card-camera-2 {
+      display: none;
+    }
+  }
+  /*------------------------------------------------------ */
+/* Fin Seccion Camaras                                 */
+/*------------------------------------------------------ */

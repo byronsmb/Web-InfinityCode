@@ -1,0 +1,77 @@
+/* Start of CSS Coding... */
+
+
+
+.container-camera { 
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);  
+  padding: 28px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  display: flex;
+;
+
+  width: 100%;
+  height: auto;
+ 
+  margin-left: 10px; /* Agrega margen izquierdo */
+  margin-right: 10px;
+}
+
+
+
+.banner-image {
+
+  background-position: center;
+  background-size: cover;
+  /*height: 300px;*/
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+
+.section-camera { /* **********************************************/
+  display: flex;
+  flex-direction: column;
+
+  /* gradient background*/
+  background: linear-gradient(45deg, rgb(186, 218, 199) 0%, rgb(90, 117, 96) 100%);
+
+  background-size: cover;
+  background-position: center;  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  height: 100vh;  
+}
+
+.section-images-camera { /* **********************************************/
+  display: flex;
+ 
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilos para escritorio */
+
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para tablet */
+  .card-camera-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* Estilos para móvil */
+  .card-camera-1 {
+    display: none;
+  }
+  .card-camera-2 {
+    display: none;
+  }
+}
+
+/* End of CSS Coding... */
+

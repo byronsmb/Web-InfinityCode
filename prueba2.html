@@ -1,340 +1,69 @@
-<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="glass-card-grid">
+      <article class="glass-card">
+        <h3 class="glass-card-title">
+          <a href="#"> Title </a>
+        </h3>
         
-        @charset "UTF-8";
-    /*!
- * Bootstrap  v5.3.2 (https: //getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */:root, [data-bs-theme=light] {
-    
-    --bs-primary-rgb: 13, 110, 253;
-    --bs-warning-rgb: 255, 193, 7;
-    --bs-danger-rgb: 220, 53, 69;
-    --bs-light-rgb: 248, 249, 250;
-    --bs-dark-rgb: 33, 37, 41;
-    --bs-white-rgb: 255, 255, 255;
-    
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-@media (prefers-reduced-motion:no-preference) {
-    :root {
-    scroll-behavior: smooth;
-}
-}
-body {
-    margin: 0;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #10bd2d;
-    text-align: var(--bs-body-text-align);
-    background-color: #fff;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-}
-
-h1  {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    color: inherit;
-}
-
-@media (min-width:1200px) {
-     h1 {
-    font-size: 2.5rem;
-}
-}
-
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-
-.lead-web { /********************************************************************************************************/
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
-.display-5-web { /********************************************************************************************************/
-    font-size: calc(1.425rem + 2.1vw);
-    font-weight: 300;
-    line-height: 1.2;
-}
-@media (min-width:1200px) {
-    .display-5-web { /********************************************************************************************************/
-    font-size: 3rem;
-    
-}
-}
-
-.img-fluid-web { /********************************************************************************************************/
-    max-width: 100%;
-    height: auto;
-}
-
-
-.container {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-right: auto;
-    margin-left: auto;
-}
-@media (min-width:576px) {
-    .container {
-    max-width: 540px;
-    
-}
-}
-@media (min-width:768px) {
-    .container {
-    max-width: 720px;
-    
-}
-}
-@media (min-width:992px) {
-    .container {
-    max-width: 960px;
-}
-
-}
-@media (min-width:1200px) {
-    .container {
-    max-width: 1140px;
-}
-}@media (min-width:1400px) {
-    .container {
-    max-width: 1320px;
-}
-}
-
-
-
-.row { /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  --------------*/
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-.row>* { /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  --------------*/
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
-}
-
-
-.col-12-web { /********************************************************************************************************/
-    flex: 0 0 auto;
-    width: 100%}
-
-.gy-3-web { /********************************************************************************************************/
-    --bs-gutter-y: 1rem;
-}
-
-@media (max-width:767px) {
-    .col-md-6-web { 
-        width: 35%;
-    }
-    .row {
-        justify-content: center;
-    }
-}
-@media (min-width:768px) {
-
-.col-md-6-web { /********************************************************************************************************/
-    flex: 0 0 auto;
-    width: 50%}
-
-.col-lg-5-web { /********************************************************************************************************/
-    flex: 0 0 auto;
-    width: 41.66666667%}
-.col-lg-6-web { /********************************************************************************************************/
-    flex: 0 0 auto;
-    width: 50%}
-
-.offset-lg-1-web { /********************************************************************************************************/
-    margin-left: 8.33333333%}
-
-.g-lg-5, .gy-lg-5-web {/********************************************************************************************************/
-    --bs-gutter-y: 3rem;
-}
-}
-
-
-
-.d-flex-web { /********************************************************************************************************/
-    display: flex!important;
-}
-
-
-.w-100-web { /********************************************************************************************************/
-    width: 100%!important;
-}
-
-.flex-row { /********************************************************************************************************/
-    flex-direction: row!important;
-}
-.flex-column-web { /********************************************************************************************************/
-    flex-direction: column!important;
-}
-
-.justify-content-center { /********************************************************************************************************/
-    justify-content: center!important;
-}
-
-.align-items-center-web { 
-    align-items: center!important;
-}
-
-.mt-5-web { /********************************************************************************************************/
-    margin-top: 3rem!important;
-}
-
-.me-1 { /********************************************************************************************************/
-    margin-right: .25rem!important;
-}
-.me-2 { /********************************************************************************************************/
-    margin-right: .5rem!important;
-}
-
-.mb-0-web { /********************************************************************************************************/
-    margin-bottom: 0!important;
-}
-
-.mb-3-web { /********************************************************************************************************/
-    margin-bottom: 1rem!important;
-}
-
-.mb-5-web { /********************************************************************************************************/
-    margin-bottom: 3rem!important;
-}
-
-.py-5-web { /**************************************************************************************************/
-    padding-top: 3rem!important;
-    padding-bottom: 3rem!important;
-}
-
-.gap-1 { /********************************************************************************************************/
-    gap: .25rem!important;
-}
-
-.gap-5-web { /********************************************************************************************************/
-    gap: 3rem!important;
-}
-
-.fw-bold-web { /********************************************************************************************************/
-    font-weight: 700!important;
-}
-
-.text-center-web { /********************************************************************************************************/
-    text-align: center!important;
-}
-
-.text-primary { /********************************************************************************************************/
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity))!important;
-}
-
-.text-warning { /********************************************************************************************************/
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity))!important;
-}
-
-.text-white-web { /********************************************************************************************************/
-    --bs-text-opacity: 1;
-    color: rgba(0, 255, 255, 1)!important;
-}
-
-.rounded-4-web { /********************************************************************************************************/
-    border-radius: 1rem!important;
-}
-
-.d-md-block-web { /********************************************************************************************************/
-    display: block!important;
-}
-
-.justify-content-md-start { /********************************************************************************************************/
-    justify-content: flex-start!important;
-}
-
-.mb-md-0-web {/********************************************************************************************************/
-    margin-bottom: 0!important;
-}
-
-.text-md-start-web { /********************************************************************************************************/
-    text-align: left!important;
-}
-
-.py-xxl-5-web { 
-    padding-top: 3rem!important;
-    padding-bottom: 3rem!important;
-}
-
-
-
-
-
-/*# sourceMappingURL=bootstrap.min.css.map */
-
-    </style>
-    
-</head>
-<body>
-    <section class="py-5-web py-xxl-5-web">
-        <div class="container">  
-            <div class="row align-items-center-web gy-lg-5-web gy-3-web">
-                <div class="col-lg-5-web col-12-web" >
-                    <div class="d-flex-web flex-column-web gap-5-web text-center-web text-md-start-web">
-                        <div>
-                            <h1 class="text-white-web mb-3-web display-5-web fw-bold-web">
-                                Exclusive Website Templates for Coaches
-                            </h1>
-                            <p class="mb-0-web lead-web">Our premium coaching website templates help you create an impactful online presence by launching your dream website within no time.</p>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-                <div class="offset-lg-1-web col-lg-6-web col-12-web d-md-block-web">
-                    <div class="row" >
-                        <div class="col-md-6-web" >
-                            <div class="mt-5-web" >
-                                <img src="image1.png" alt="img" class="rounded-4-web img-fluid-web mb-5-web w-100-web">
-                                <img src="./images/galaxy.jpg" alt="img" class="rounded-4-web img-fluid-web mb-5-web mb-md-0-web">
-                            </div>
-                        </div>
-                        <div class="col-md-6-web" >
-                            <div class="" >
-                                <img src="p2.jpg" alt="img" class="rounded-4-web img-fluid-web mb-5-web">
-                                <img src="p2.jpg" alt="img" class="rounded-4-web img-fluid-web">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+          excepturi veritatis vitae corporis! Dolorum soluta similique qui
+          assumenda. Suscipit in voluptatibus nam iure obcaecati. Officiis
+          minima illo inventore magni odio.
+        </p>
+        <div class="author-row">
+          <a class="author-name" href="#"> Author </a>
         </div>
-    </section>
-</body>
+      </article>
+      <article class="glass-card">
+        <img src="web1.jpg" alt="Descripción de la imagen">
+        
+        
+      </article>
+      <article class="glass-card">
+        <h3 class="glass-card-title">
+          <a href="#"> Title </a>
+        </h3>
+        <div class="tags">
+          <a href="#" rel="tag">tag 1</a>
+          <a href="#" rel="tag">tag 2</a>
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+          excepturi veritatis vitae corporis! Dolorum soluta similique qui
+          assumenda. Suscipit in voluptatibus nam iure obcaecati. Officiis
+          minima illo inventore magni odio.
+        </p>
+        <div class="author-row">
+          <a class="author-name" href="#"> Author </a>
+        </div>
+      </article>
+      <article class="glass-card">
+        <h3 class="glass-card-title">
+          <a href="#"> Title </a>
+        </h3>
+        <div class="tags">
+          <a href="#" rel="tag">tag 1</a>
+          <a href="#" rel="tag">tag 2</a>
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+          excepturi veritatis vitae corporis! Dolorum soluta similique qui
+          assumenda. Suscipit in voluptatibus nam iure obcaecati. Officiis
+          minima illo inventore magni odio.
+        </p>
+        <div class="author-row">
+          <a class="author-name" href="#"> Author </a>
+        </div>
+      </article>
+    </div>
+  </body>
 </html>
